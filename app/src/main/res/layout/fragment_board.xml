@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--XML for the board in our connect four app!(:-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BoardFragment"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="#E6B00E">
+    <TextView
+        android:layout_width="154dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/Grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E6B00E"
+        app:rowCount="7"
+        app:columnCount="7"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+
+
+        <!--Beginning of row 0-->
+
+<!--I had to change each of the buttons heights and widths
+from 35dp to 48dp because otherwise I would've gotten a
+touch size is too small error! My apologies in advance!-->
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="0"
+            app:layout_column="0"
+            android:importantForAccessibility="no"/>
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="0"
+            app:layout_column="1"
+            android:importantForAccessibility="no"/>
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="0"
+            app:layout_column="2"
+            android:importantForAccessibility="no"/>
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="0"
+            app:layout_column="3"
+            android:importantForAccessibility="no"/>
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="0"
+            app:layout_column="4"
+            android:importantForAccessibility="no" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="0"
+            app:layout_column="5"
+            android:importantForAccessibility="no"/>
+
+
+        <!--Beginning of row 1-->
+
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="1"
+            app:layout_column="0"
+            android:importantForAccessibility="no"/>
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="1"
+            app:layout_column="1"
+            android:importantForAccessibility="no"/>
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="1"
+            app:layout_column="2"
+            android:importantForAccessibility="no"/>
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="1"
+            app:layout_column="3"
+            android:importantForAccessibility="no"/>
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="1"
+            app:layout_column="4"
+            android:importantForAccessibility="no"/>
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="1"
+            app:layout_column="5"
+            android:importantForAccessibility="no"/>
+
+
+        <!--Beginning of row 2-->
+
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="2"
+            app:layout_column="0"
+            android:importantForAccessibility="no"/>
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="2"
+            app:layout_column="1"
+            android:importantForAccessibility="no"/>
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="2"
+            app:layout_column="2"
+            android:importantForAccessibility="no"/>
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="2"
+            app:layout_column="3"
+            android:importantForAccessibility="no"/>
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="2"
+            app:layout_column="4"
+            android:importantForAccessibility="no"/>
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="2"
+            app:layout_column="5"
+            android:importantForAccessibility="no"/>
+
+
+        <!--Beginning of row 3-->
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="3"
+            app:layout_column="0"
+            android:importantForAccessibility="no"/>
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="3"
+            app:layout_column="1"
+            android:importantForAccessibility="no"/>
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="3"
+            app:layout_column="2"
+            android:importantForAccessibility="no"/>
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="3"
+            app:layout_column="3"
+            android:importantForAccessibility="no"/>
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="3"
+            app:layout_column="4"
+            android:importantForAccessibility="no"/>
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="3"
+            app:layout_column="5"
+            android:importantForAccessibility="no"/>
+
+
+        <!--Beginning of row 4-->
+
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="4"
+            app:layout_column="0"
+            android:importantForAccessibility="no"/>
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="4"
+            app:layout_column="1"
+            android:importantForAccessibility="no"/>
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="4"
+            app:layout_column="2"
+            android:importantForAccessibility="no"/>
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="4"
+            app:layout_column="3"
+            android:importantForAccessibility="no"/>
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="4"
+            app:layout_column="4"
+            android:importantForAccessibility="no"/>
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="4"
+            app:layout_column="5"
+            android:importantForAccessibility="no"/>
+
+
+        <!--Beginning of row 5-->
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="5"
+            app:layout_column="0"
+            android:importantForAccessibility="no"/>
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="5"
+            app:layout_column="1"
+            android:importantForAccessibility="no"/>
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="5"
+            app:layout_column="2"
+            android:importantForAccessibility="no"/>
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="5"
+            app:layout_column="3"
+            android:importantForAccessibility="no"/>
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="5"
+            app:layout_column="4"
+            android:importantForAccessibility="no"/>
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="5"
+            app:layout_column="5"
+            android:importantForAccessibility="no"/>
+
+
+
+        <!--beginning of row 6-->
+
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="6"
+            app:layout_column="0"
+            android:importantForAccessibility="no"/>
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="6"
+            app:layout_column="1"
+            android:importantForAccessibility="no"/>
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="6"
+            app:layout_column="2"
+            android:importantForAccessibility="no"/>
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="6"
+            app:layout_column="3"
+            android:importantForAccessibility="no"/>
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="6"
+            app:layout_column="4"
+            android:importantForAccessibility="no"/>
+
+        <Button
+            style="@style/circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_row="6"
+            app:layout_column="5"
+            android:importantForAccessibility="no"/>
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+</LinearLayout>

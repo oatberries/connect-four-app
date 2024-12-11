@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/boardFragment"
+        android:icon="@drawable/baseline_videogame_asset_24"
+        android:title="@string/connect_four_option_text" />
+
+    <item
+        android:id="@+id/gameOptionsFragment"
+        android:icon="@drawable/baseline_create_24"
+        android:title="@string/options_option_text" />
+
+</menu>

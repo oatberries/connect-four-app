@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--XML file for our options screen of our connect four app-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameOptionsFragment"
+    android:background="#E6B00E"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="200dp"
+        android:autoSizeMaxTextSize="25sp"
+        android:gravity="center"
+        android:text="@string/select_difficulty_textview_text"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <RadioGroup
+        android:id="@+id/Difficulty_option_buttons"
+        android:layout_width="200dp"
+        android:layout_height="165dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!--Easy button-->
+        <RadioButton
+            android:id="@+id/Easy_button"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:button="?android:attr/listChoiceIndicatorSingle"
+            android:layout_marginTop="20dp"
+            android:text="@string/easy_button_text"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:buttonTint="@color/black"
+            android:onClick="selectEasy"/>
+        <!--Medium button-->
+        <RadioButton
+            android:id="@+id/Medium_button"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:button="?android:attr/listChoiceIndicatorSingle"
+            android:text="@string/medium_button_text"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:buttonTint="@color/black"
+            android:onClick="selectMedium"/>
+        <!--Hard button-->
+        <RadioButton
+            android:id="@+id/Hard_button"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:button="?android:attr/listChoiceIndicatorSingle"
+            android:text="@string/hard_button_text"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:buttonTint="@color/black"
+            android:onClick="selectHard"/>
+
+    </RadioGroup>
+</LinearLayout>
